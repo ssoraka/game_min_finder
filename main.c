@@ -23,8 +23,8 @@
 int main() {
 
 	//инициализировал поле
-	void *game = init_game(0);
-	//получил количество измерений - 1 для нулевого уровня
+	void *game = init_game(FIRST);
+	//получил количество измерений - 1 для уровня FIRST
 	int dim = get_game_dimension(game);
 
 	srand(time(NULL));
