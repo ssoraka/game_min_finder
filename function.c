@@ -57,7 +57,7 @@ void    *init_game(t_lvl lvl){
     if (!(game = (t_game *)malloc(sizeof(t_game))))
         return (NULL);
     game->dim = get_dimension(lvl);
-    srand(NULL);
+    srand(time(NULL));
     i = 0;
     while(i < game->dim) {
         game->x0[i] = init_x0(lvl);

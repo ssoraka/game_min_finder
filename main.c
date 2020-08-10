@@ -27,6 +27,7 @@ int main() {
 	//получил количество измерений - 1 для нулевого уровня
 	int dim = get_game_dimension(game);
 
+	srand(time(NULL));
 	double x[1] = {rand()};
 
 	printf("мое случайное значение x=%lf, f(x)=%lf\n", x[0], function(game, x));
